@@ -20,12 +20,15 @@
 			<small>VN</small>
 		</h3>
 		<span><strong>Skills: </strong></span>
-		<span class="label label-default">Swift</span>
-		<span class="label label-info">Objective C</span>
-		<span class="label label-warning">HTML5/CSS</span>
-		<span class="label label-info">AngularJS</span>
-		<span class="label label-success">Ionic</span>
-		<span class="label label-danger">NodeJS</span>
+		<span ng-repeat="skill in skills">
+			<span class="label" ng-class="skill.color">{{skill.name}}</span>
+		</span>
+		<!--<span class="label label-default">Swift</span>-->
+		<!--<span class="label label-info">Objective C</span>-->
+		<!--<span class="label label-warning">HTML5/CSS</span>-->
+		<!--<span class="label label-info">AngularJS</span>-->
+		<!--<span class="label label-success">Ionic</span>-->
+		<!--<span class="label label-danger">NodeJS</span>-->
 
 		<hr>
 

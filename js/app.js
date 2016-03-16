@@ -1,5 +1,21 @@
 var app = angular.module('iamduc', []).controller('IamducCtrl', function ($scope, $window) {
-	$scope.skills = ["Swift", "Objective C", "HTML5/CSS", "AngularJS", "Ionic", "NodeJS"];
+
+	$scope.skills = [
+		{name: "Swift", color: "label-warning"},
+		{name: "Objective C", color: "label-default"},
+		{name: "HTML5/CSS", color: "label-success"},
+		{name: "AngularJS", color: "label-info"},
+		{name: "Ionic", color: "label-danger"},
+		{name: "NodeJS", color: "label-default"}];
+
+	//$scope.style = ["label-warning", "label-default", "label-success", "label-danger", "label-info"];
+
+	//$scope.getRandomStyle = function () {
+	//	var random = Math.floor((Math.random() * ($scope.style.length - 1)));
+	//	console.log(random);
+	//	return $scope.style[random];
+	//};
+
 	$scope.gotoPage = function (page) {
 		var url = "";
 		switch (page) {
@@ -23,7 +39,7 @@ var app = angular.module('iamduc', []).controller('IamducCtrl', function ($scope
 				break;
 
 		}
-		if (url){
+		if (url) {
 			$window.open(url, '_blank');
 		}
 	}
