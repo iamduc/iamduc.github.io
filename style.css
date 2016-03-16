@@ -1,0 +1,27 @@
+html, body, .div, p {
+	/*        font-family: 'Dosis', sans-serif;*/
+	font-family : 'Josefin Slab', serif;
+}
+
+.container {
+	padding : 40px 0;
+}
+
+a {
+	text-decoration : none !important;
+}
+
+#preloader {
+	display: block;
+	margin: 0 auto;
+	width: 64px;
+
+}
+
+.copyright {
+	position  : fixed;
+	bottom    : 10px;
+	color     : azure margin : 0 auto;
+	float     : none;
+	font-size : 16px
+}
