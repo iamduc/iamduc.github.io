@@ -35,6 +35,9 @@ var app = angular.module('iamduc', []).controller('IamducCtrl', function ($scope
 			case 'li':
 				url = "https://vn.linkedin.com/in/nnduc/";
 				break;
+			case 'sk':
+				url = "skype:ducnn01?call";
+				break;
 			default:
 				break;
 
