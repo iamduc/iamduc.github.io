@@ -1,42 +1,87 @@
 <!DOCTYPE html>
-<html>
+<html id="top" lang="en" ng-app="iamduc">
 <head>
-    <meta http-equiv="Refresh" content="3;url=http://duc.ninja/">
-    <title>Duc Nguyen</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
-          integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-    <link href='https://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Josefin+Slab' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="style.css">
-    <script src="jquery.js"></script>
-    <script src="site.js"></script>
+	<title>Duc N. Nguyen</title>
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.css" rel="stylesheet">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<link href="css/style.css" rel="stylesheet">
 </head>
 
-<body onload="timedCount()">
-<div class="container">
-    <div class="col-md-8" style="margin: 0 auto; float: none;">
-        <!--new style-->
-        <img src="preloader.gif" alt="" id="preloader"/>
+<body ng-controller="IamducCtrl">
+<div class="col-md-8 text-center wrapper">
+	<div class="header">
+		<h4 class="title" id="header-label">About me</h4>
+	</div>
+	<div class="content">
 
-        <!-- old style -->
-        <!--<h2><b>Sorry! We have moved! The new URL is: </b></h2>-->
-        <!--<br/><br/>-->
+		<img src="https://s.gravatar.com/avatar/c36e222da47d2e0aae7b8fa912aad7ef?s=256"
+		     name="aboutme" width="140" height="140" border="0" class="img-circle">
+		<h3 class="media-heading padding">Duc N. Nguyen
+			<small>VN</small>
+		</h3>
+		<span><strong>Skills: </strong></span>
+		<span class="label label-default">Swift</span>
+		<span class="label label-info">Objective C</span>
+		<span class="label label-warning">HTML5/CSS</span>
+		<span class="label label-info">AngularJS</span>
+		<span class="label label-success">Ionic</span>
+		<span class="label label-danger">NodeJS</span>
 
-        <!--<h2 style="margin: 0 auto; float: none"><a href="http://duc.ninja">http://duc.ninja</a></h2>-->
-        <!--<br/><br/>-->
+		<hr>
 
-        <!--<h3>You will be redirected to the new address in five seconds.</h3>-->
+		<p class="text-left"><strong>Bio: </strong><br>
 
-        <!--<h3>If you see this message for more than <b><span id="time-txt">0</span> seconds</b>, please click on the link-->
-        <!--above!</h3>-->
-        <!--<span class="copyright">-->
-        <!--<a href="https://twitter.com/duccuimia">@duccuimia</a>-->
-        <!--</span>-->
-    </div>
+		</p>
+		<br>
+
+		<p class="text-left"><strong>Love quote: </strong><br>
+			<i>A good programmer is someone who always looks both ways before crossing a one-way street.</i>
+		</p>
+		<!--<p class="text-left"><strong>Project: </strong><br>-->
+		<!--<br>-->
+		<br>
+
+	</div>
+	<p class="text-left"><strong>Connect: </strong><br>
+	<div class="container-fluid">
+
+		<div class="row">
+			<div class="sicon">
+
+				<div class="col-lg-1 col-md-1 col-sm-2 col-xs-3 text-center">
+					<div class="icon-circle">
+						<a ng-click="gotoPage('fb')" class="ifacebook" title="Facebook"><i
+								class="fa fa-facebook"></i></a>
+					</div>
+				</div>
+
+				<div class="col-lg-1 col-md-1 col-sm-2 col-xs-3 text-center">
+					<div class="icon-circle">
+						<a ng-click="gotoPage('tt')" class="itwittter" title="Twitter"><i class="fa fa-twitter"></i></a>
+					</div>
+				</div>
+
+				<div class="col-lg-1 col-md-1 col-sm-2 col-xs-3 text-center">
+					<div class="icon-circle">
+						<a ng-click="gotoPage('gp')" class="igoogle" title="Google+"><i
+								class="fa fa-google-plus"></i></a>
+					</div>
+				</div>
+
+				<div class="col-lg-1 col-md-1 col-sm-2 col-xs-3 text-center">
+					<div class="icon-circle">
+						<a ng-click="gotoPage('li')" class="iLinkedin" title="Linkedin"><i
+								class="fa fa-linkedin"></i></a>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+	</div>
 </div>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
-        integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
-        crossorigin="anonymous"></script>
 
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.1/angular.js"></script>
+<script src="js/app.js"></script>
 </body>
 </html>
