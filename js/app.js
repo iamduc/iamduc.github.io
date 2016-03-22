@@ -8,14 +8,6 @@ var app = angular.module('iamduc', []).controller('IamducCtrl', function ($scope
 		{name: "Ionic", color: "label-danger"},
 		{name: "NodeJS", color: "label-default"}];
 
-	//$scope.style = ["label-warning", "label-default", "label-success", "label-danger", "label-info"];
-
-	//$scope.getRandomStyle = function () {
-	//	var random = Math.floor((Math.random() * ($scope.style.length - 1)));
-	//	console.log(random);
-	//	return $scope.style[random];
-	//};
-
 	$scope.gotoPage = function (page) {
 		var url = "";
 		switch (page) {
