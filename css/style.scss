@@ -16,7 +16,7 @@ body {
 			width :140px;
 			height:140px;
 			border:none;
-
+				//-webkit-filter: grayscale(80%);
 		}
 		.img-aboutme:hover{
 			-webkit-transform: rotate(-5deg) ;
@@ -201,6 +201,18 @@ body {
 	color            : #fff;
 	border           : 1px solid #007bb7;
 }
+
+.iGithub .fa {
+	color  : #007bb7;
+	border : 2px solid #007bb7;
+}
+
+.iGithub .fa:hover {
+	background-color : #007bb7;
+	color            : #fff;
+	border           : 1px solid #007bb7;
+}
+
 
 .js-blocked{
 	img{

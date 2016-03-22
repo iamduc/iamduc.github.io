@@ -8,6 +8,11 @@ var app = angular.module('iamduc', []).controller('IamducCtrl', function ($scope
 		{name: "Ionic", color: "label-danger"},
 		{name: "NodeJS", color: "label-default"}];
 
+	$scope.projects = [
+
+
+	];
+
 	$scope.gotoPage = function (page) {
 		var url = "";
 		switch (page) {
@@ -22,7 +27,7 @@ var app = angular.module('iamduc', []).controller('IamducCtrl', function ($scope
 				//url = "https://plus.google.com/+NgọcĐứcNguyễn";
 				break;
 			case 'gh':
-				console.log("https://github.com/ducito/");
+				url = "https://github.com/ducito/" ;
 				break;
 			case 'li':
 				url = "https://vn.linkedin.com/in/nnduc/";
