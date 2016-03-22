@@ -1,5 +1,5 @@
 body {
-	padding    : 50px;
+	padding-top: 2em;
 }
 
 .wrapper {
@@ -7,14 +7,49 @@ body {
 	margin  : 0 auto;
 	float   : none;
 	.header{
-
+		.title{
+			color: #999;
+		}
 	}
 	.content{
+		.img-aboutme {
+			width :140px;
+			height:140px;
+			border:none;
+
+		}
+		.img-aboutme:hover{
+			-webkit-transform: rotate(-5deg) ;
+			-moz-transform: rotate(-5deg);
+			-o-transform: rotate(-5deg);
+			-ms-transform: rotate(-5deg);
+			transform: rotate(-5deg);
+		}
 		.padding{
 			padding: 5px 0 5px 0;
 		}
+		.media-heading{
+			text-shadow: 2px 2px 4px #999;
+			text-align: center;
+			margin: auto;
+			color: #333;
+			margin: 0.8em;
+		}
+		.label-skill{
+			padding: 0.6em 1em !important;
+
+		}
+		.label-skill:hover{
+			background-color: #302c34 !important;
+			padding: 0.8em 1em !important;
+			transform: scale(1.1);
+			transition: all .2s ease-in-out;
+		}
 	}
 	.container-fluid{
+		margin: auto;
+		float: none;
+		padding-top: 5em;
 		.row{
 			margin: 0 auto;
 			float: none;
@@ -165,4 +200,18 @@ body {
 	background-color : #007bb7;
 	color            : #fff;
 	border           : 1px solid #007bb7;
+}
+
+.js-blocked{
+	img{
+		width: 80px;
+		height: 80px;
+		margin: auto;
+		float: none;
+		display: block;
+	}
+	p{
+		margin: auto;
+		float: none;
+	}
 }

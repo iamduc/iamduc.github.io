@@ -1,18 +1,47 @@
 body {
-  padding: 50px; }
+  padding-top: 2em; }
 
 .wrapper {
   display: block;
   margin: 0 auto;
   float: none; }
+  .wrapper .header .title {
+    color: #999; }
+  .wrapper .content .img-aboutme {
+    width: 140px;
+    height: 140px;
+    border: none; }
+  .wrapper .content .img-aboutme:hover {
+    -webkit-transform: rotate(-5deg);
+    -moz-transform: rotate(-5deg);
+    -o-transform: rotate(-5deg);
+    -ms-transform: rotate(-5deg);
+    transform: rotate(-5deg); }
   .wrapper .content .padding {
     padding: 5px 0 5px 0; }
-  .wrapper .container-fluid .row {
-    margin: 0 auto;
-    float: none; }
-    .wrapper .container-fluid .row .social-item {
-      width: 20%;
-      float: left; }
+  .wrapper .content .media-heading {
+    text-shadow: 2px 2px 4px #999;
+    text-align: center;
+    margin: auto;
+    color: #333;
+    margin: 0.8em; }
+  .wrapper .content .label-skill {
+    padding: 0.6em 1em !important; }
+  .wrapper .content .label-skill:hover {
+    background-color: #302c34 !important;
+    padding: 0.8em 1em !important;
+    transform: scale(1.1);
+    transition: all .2s ease-in-out; }
+  .wrapper .container-fluid {
+    margin: auto;
+    float: none;
+    padding-top: 5em; }
+    .wrapper .container-fluid .row {
+      margin: 0 auto;
+      float: none; }
+      .wrapper .container-fluid .row .social-item {
+        width: 20%;
+        float: left; }
 
 .icon-circle .fa {
   font-size: 15px;
@@ -128,5 +157,15 @@ body {
   background-color: #007bb7;
   color: #fff;
   border: 1px solid #007bb7; }
+
+.js-blocked img {
+  width: 80px;
+  height: 80px;
+  margin: auto;
+  float: none;
+  display: block; }
+.js-blocked p {
+  margin: auto;
+  float: none; }
 
 /*# sourceMappingURL=style.css.map */

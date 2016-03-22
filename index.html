@@ -26,30 +26,22 @@
 	<div class="content">
 
 		<img src="https://s.gravatar.com/avatar/c36e222da47d2e0aae7b8fa912aad7ef?s=256"
-		     name="aboutme" width="140" height="140" border="0" class="img-circle">
-		<h3 class="media-heading padding">Duc N. Nguyen
+		     name="aboutme" class="img-aboutme img-circle">
+		<h2 class="media-heading padding">DUC N. NGUYEN
 			<small>VN</small>
-		</h3>
-		<span><strong>Skills: </strong></span>
+		</h2>
+
 		<span ng-repeat="skill in skills">
-			<span class="label" ng-class="skill.color">{{skill.name}}</span>
+			<span class="label label-skill" ng-class="skill.color">{{skill.name}}</span>
 		</span>
 		<hr>
 
-		<p class="text-left"><strong>Bio: </strong><br>
 		<p>I'm an iOS developer, web developer and freelancer also.</p>
 		</p>
 		<br>
 
-		<p class="text-left"><strong>Love quote: </strong><br>
-			<i>A good programmer is someone who always looks both ways before crossing a one-way street.</i>
-		</p>
-		<br>
-
 	</div>
-	<p class="text-left"><strong>Connect: </strong><br>
-	<div class="container-fluid">
-
+	<div class=" container-fluid col-md-12 col-sm-9 col-xs-9">
 		<div class="row col-lg-6 col-md-6 col-sm-6 col-xs-12">
 			<div class="social-item text-center">
 				<div class="icon-circle">
@@ -87,6 +79,11 @@
 		</div>
 
 	</div>
+	<noscript class="js-blocked">
+		<img src="images/preloader.gif" alt="">
+		<p>You don't have JavaScript enabled. <a href="https://twitter.com/duccuimia" target="_blank">Go to my blog.</a></p>
+	</noscript>
+
 </div>
 <script src="js/app.js"></script>
 </body>
