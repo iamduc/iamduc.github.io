@@ -188,4 +188,19 @@ body {
     width: 24px;
     height: 24px; }
 
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  width: 100%;
+  margin: auto; }
+
+.carousel-inner .item {
+  width: 100%;
+  min-height: 60px; }
+  .carousel-inner .item .carousel-caption {
+    padding: 0 !important;
+    bottom: 0 !important;
+    color: #3B5998 !important;
+    font-size: 1.2em;
+    text-shadow: none !important; }
+
 /*# sourceMappingURL=style.css.map */
