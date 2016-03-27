@@ -24,14 +24,18 @@ body {
     text-align: center;
     margin: auto;
     color: #333;
-    margin: 0.8em; }
-  .wrapper .content .label-skill {
-    padding: 0.6em 1em !important; }
-  .wrapper .content .label-skill:hover {
-    background-color: #302c34 !important;
-    padding: 0.8em 1em !important;
-    transform: scale(1.1);
-    transition: all .2s ease-in-out; }
+    margin: 0.8em 0 0 0.2em; }
+  .wrapper .content .skills {
+    width: 100%;
+    margin: 1.2em 0; }
+    .wrapper .content .skills .label-skill {
+      padding: 0.6em 1em !important;
+      line-height: 3em; }
+    .wrapper .content .skills .label-skill:hover {
+      background-color: #302c34 !important;
+      padding: 0.8em 1em !important;
+      transform: scale(1.1);
+      transition: all .2s ease-in-out; }
   .wrapper .container-fluid {
     margin: auto;
     float: none;

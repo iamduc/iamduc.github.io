@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+	<title>Code Highlighter 0.4</title>
+	<script type="text/javascript" src="code_highlighter.js"></script>
+	<script type="text/javascript" src="highlight.js"></script>
+	<link rel="stylesheet" href="style." />
+</head>
+
+<body>
+	<pre>
+		<code class="javascript">/*
+			This script detects external links in a page
+			and attaches a behaviour to them so they open
+			in a external window.
+			*/
+
+			function initialiseLinks() {
+			    if (document.getElementsByTagName) {
+			        var links = document.getElementsByTagName(&quot;A&quot;);
+			        for (var i = 0; i &lt; links.length; i++) {
+			            if (links[i].href.indexOf(&quot;http:&quot;)==0) {
+			                // if the links URL starts with http: then we assume it's an external link
+			                links[i].onclick = function() {
+			                    window.open(this.href);
+			                    return false; // stop normal link behaviour
+			                }
+			            }
+			        }
+			    }
+			}
+
+			window.onload = initialiseLinks();
+		</code>
+	</pre>
+</body>
+</html>

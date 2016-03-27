@@ -6,7 +6,9 @@ var app = angular.module('iamduc', []).controller('IamducCtrl', function ($scope
 		{name: "HTML5/CSS", color: "label-success"},
 		{name: "AngularJS", color: "label-info"},
 		{name: "Ionic", color: "label-danger"},
-		{name: "NodeJS", color: "label-default"}];
+		{name: "NodeJS", color: "label-default"},
+		{name: "React", color: "label-success"},
+		{name: "React Native", color: "label-info"}];
 
 	$scope.projects = [
 
