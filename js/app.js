@@ -1,5 +1,5 @@
 var app = angular.module('iamduc', []).controller('IamducCtrl', function ($scope, $window) {
-
+	$scope.myAvatar = md5("ducnn01@gmail.com");
 	$scope.skills = [
 		{name: "Swift", color: "label-warning"},
 		{name: "Objective C", color: "label-default"},
@@ -13,6 +13,14 @@ var app = angular.module('iamduc', []).controller('IamducCtrl', function ($scope
 	$scope.projects = [
 
 
+	];
+
+	$scope.moods = [
+		{content:"I'm an iOS developer, web developer and freelancer also."},
+		{content:"I am a passionate about computers and problem solving."},
+		{content:"Learn anything from anyone – anywhere, love opensource."},
+		{content:"And want to make my career as a full stack developer."},
+		{content:"Don't fear, don't regret!"}
 	];
 
 	$scope.gotoPage = function (page) {

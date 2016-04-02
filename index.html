@@ -9,7 +9,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.1/angular.js"></script>
-
+	<script src="libs/md5.min.js"></script>
 	<script>
 		(function (i, s, o, g, r, a, m) {
 			i['GoogleAnalyticsObject'] = r;
@@ -41,7 +41,7 @@
 	</div>
 	<div class="content">
 
-		<img src="https://s.gravatar.com/avatar/c36e222da47d2e0aae7b8fa912aad7ef?s=256"
+		<img ng-src="https://s.gravatar.com/avatar/{{myAvatar}}?s=256"
 		     name="aboutme" class="img-aboutme img-circle">
 		<h2 class="media-heading padding">DUC N. NGUYEN
 			<small>VN</small>
