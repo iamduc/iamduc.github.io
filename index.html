@@ -1,12 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>@duccuimia</title>
+	<meta charset="UTF-8">
+	<title>@duccuimia</title>
+	<link rel="stylesheet" href="libs/font-awesome.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	
+	<script src="libs/jquery-3.1.1.min.js"></script>
+	<script src="js/app.js"></script>
 </head>
-<body>
-    <div class="construction-message">
-        This site is under development! <br>Please come back later or contact me via <a href="https://twitter.com/duccuimia">@duccuimia</a>
-    </div>
+<body onload="startApp()">
+
+<div class="bg"></div>
+<div class="bg hidden"></div>
+
+<div id="onboarding">
+	<img src="images/loading-green.png" alt="" class="img-loading">
+</div>
+
+<div class="wrapper">
+	<div class="intro">
+		Hello, Hi, Hey. My name's <strong>Duc</strong>. <br>I'm an iOS engineer from Danang, Vietnam. <br>I enjoy coding and I love my job.
+		
+	</div>
+	<div class="my-links">
+		<a href="#" onclick="gotoBlog()"><i class="fa fa-hand-o-right" aria-hidden="true"></i>&nbsp; Blog</a><span class="soon">&nbsp;&nbsp;SOON</span><br>
+		<a href="#" onclick="gotoPortfolio()" ><i class="fa fa-hand-o-right" aria-hidden="true"></i>&nbsp; Portfolio</a><span class="soon">&nbsp;&nbsp;SOON</span><br>
+		<a href="#" onclick="gotoContact()"><i class="fa fa-hand-o-right" aria-hidden="true"></i>&nbsp; Contact</a><br>
+	</div>
+	
+</div>
+
 </body>
 </html>

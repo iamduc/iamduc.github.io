@@ -1,0 +1,117 @@
+html, body {
+  margin      : 0;
+  height      : 100%;
+  position    : relative;
+  font-family : 'Roboto', sans-serif;
+}
+
+.bg {
+  position   : absolute;
+  width      : 100%;
+  height     : 100%;
+  transition : opacity 5s;
+  z-index    : 1;
+}
+
+.hidden {
+  opacity : 0;
+}
+
+#onboarding {
+  position         : absolute;
+  width            : 100%;
+  height           : 100%;
+  transition       : opacity 2s;
+  z-index          : 100;
+  background-color : rgb(226, 226, 226);
+
+  .img-loading {
+    width             : 64px;
+    display           : block;
+    margin            : 0;
+    position          : absolute;
+    top               : 50%;
+    left              : 50%;
+    transform         : translate(-50%, -50%);
+    -webkit-animation : rotation 2s infinite linear;
+  }
+}
+
+.wrapper {
+  position                          : absolute;
+  z-index                           : 99999;
+  max-width                         : 512px;
+  color                             : #ffffff !important;
+  font-size                         : 1.3em;
+  padding                           : 16px;
+
+  -moz-animation-name               : appearAnimation;
+  -moz-animation-iteration-count    : 1;
+  -moz-animation-timing-function    : ease-in;
+  -moz-animation-duration           : 0.5s;
+
+  -webkit-animation-name            : appearAnimation;
+  -webkit-animation-iteration-count : 1;
+  -webkit-animation-timing-function : ease-in;
+  -webkit-animation-duration        : 0.5s;
+
+  animation-name                    : appearAnimation;
+  animation-iteration-count         : 1;
+  animation-timing-function         : ease-in;
+  animation-duration                : 0.5s;
+
+  .intro {
+    margin      : 16px 0;
+    text-shadow : #e2e2e2;
+    //color: #006798;
+  }
+
+  .my-links {
+    a {
+      text-decoration : none;
+      //color: #008ccc;
+      color           : #ffffff;
+    }
+
+    .soon {
+      color     : #c1bec7;
+      font-size : 0.6em;
+    }
+  }
+}
+
+@-moz-keyframes appearAnimation {
+  0% {
+    -moz-transform : translateX(-40px);
+  }
+  100% {
+    -moz-transform : translateX(0);
+  }
+}
+
+@-webkit-keyframes appearAnimation {
+  0% {
+    -webkit-transform : translateX(-40px);
+  }
+  100% {
+    -webkit-transform : translateX(0);
+  }
+}
+
+@keyframes appearAnimation {
+  0% {
+    transform : translateX(-40px);
+  }
+  100% {
+    transform : translateX(0);
+  }
+}
+
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform : rotate(0deg);
+  }
+  to {
+    -webkit-transform : rotate(359deg);
+  }
+}
