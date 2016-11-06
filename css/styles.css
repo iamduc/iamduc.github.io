@@ -18,7 +18,7 @@ html, body {
   position: absolute;
   width: 100%;
   height: 100%;
-  transition: opacity 2s;
+  transition: opacity 5s;
   z-index: 100;
   background-color: #e2e2e2; }
   #onboarding .img-loading {
@@ -59,6 +59,14 @@ html, body {
   .wrapper .my-links .soon {
     color: #c1bec7;
     font-size: 0.6em; }
+
+.o-hide {
+  opacity: 0;
+  transition: all ease 0.3s; }
+
+.o-show {
+  opacity: 1;
+  transition: all ease 0.8s; }
 
 @-moz-keyframes appearAnimation {
   0% {

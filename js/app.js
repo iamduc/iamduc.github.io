@@ -23,16 +23,12 @@ function rollBg() {
 }
 
 function startApp() {
-
-
 	setTimeout(function () {
 		var onBoarding = document.getElementById("onboarding");
-		onBoarding.style.display = 'none';
+		onBoarding.className += "o-hide";
 		rollBg();
 		setInterval(rollBg, 5000);
-	}, 1000);
-
-
+	}, 300);
 }
 
 function gotoPortfolio() {
