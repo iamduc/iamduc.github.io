@@ -1,36 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
 	<title>@duccuimia</title>
-	<link rel="stylesheet" href="libs/font-awesome.css">
-	<link rel="stylesheet" href="css/styles.css">
-	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-	
-	<script src="libs/jquery-3.1.1.min.js"></script>
-	<script src="js/app.js"></script>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="font/css/fontello.css" rel="stylesheet">
+	<link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
 </head>
-<body onload="startApp()">
-
-<div class="bg"></div>
-<div class="bg hidden"></div>
-
-<div id="onboarding">
-	<img src="images/loading-green.png" alt="" class="img-loading">
-</div>
-
-<div class="wrapper">
-	<div class="intro">
-		Hello, Hi, Hey. My name's <strong>Duc</strong>. <br>I'm an iOS engineer from Danang, Vietnam. <br>I enjoy coding and I love my job.
-		
+<body>
+<div class="navbar">
+	<div class="navbar-inner">
+		<div class="container"><a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span
+				class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a> <a
+				class="brand" href="index.html"><img src="img/user.jpg" alt=""></a>
+			<ul class="nav nav-collapse pull-right">
+				<li><a href="index.html" class="active"><i class="icon-user"></i> Profile</a></li>
+				<li><a href="skills.html"><i class="icon-trophy"></i> Skills</a></li>
+				<li><a href="work.html"><i class="icon-picture"></i> Work</a></li>
+				<li><a href="resume.html"><i class="icon-doc-text"></i> Resume</a></li>
+			</ul>
+			<div class="nav-collapse collapse"></div>
+		</div>
 	</div>
-	<div class="my-links">
-		<a href="#" onclick="gotoBlog()"><i class="fa fa-hand-o-right" aria-hidden="true"></i>&nbsp; Blog</a><span class="soon">&nbsp;&nbsp;SOON</span><br>
-		<a href="#" onclick="gotoPortfolio()" ><i class="fa fa-hand-o-right" aria-hidden="true"></i>&nbsp; Portfolio</a><span class="soon">&nbsp;&nbsp;SOON</span><br>
-		<a href="#" onclick="gotoContact()"><i class="fa fa-hand-o-right" aria-hidden="true"></i>&nbsp; Contact</a><br>
-	</div>
-	
 </div>
-
+<div class="container profile">
+	<div class="span3"><img src="img/mini.png" alt=""></div>
+	<div class="span5">
+		<h1>Nguyen Ngoc Duc</h1>
+		<h3>iOS &amp; Web developer</h3>
+		<p> Hi! Hello! I am Duc from Vietnam. If yopu have something to be done just call my name and I will be there.
+			:-) </p>
+		<a href="#" class="hire-me"><i class="icon-paper-plane"></i> Hire Me!</a></div>
+</div>
+<div class="row social">
+	<ul class="social-icons">
+		<li><a href="http://linkedin.com/in/nnduc">
+			<img src="img/logo/li.png" alt="" class="imgs-social">
+		</a></li>
+		<li><a href="mailto:nnduc@icloud.com">
+			<img src="img/logo/em.png" alt="" class="imgs-social">
+		</a></li>
+		<li><a href="http://stackoverflow.com/users/7063533/duc-nguyen">
+			<img src="img/logo/so.png" alt="" class="imgs-social">
+		</a></li>
+		<li><a href="https://github.com/ducito">
+			<img src="img/logo/gh.png" alt="" class="imgs-social">
+		</a></li>
+		<li><a href="https://twitter.com/duccuimia">
+			<img src="img/logo/tw.png" alt="" class="imgs-social">
+		</a></li>
+		<li><a href="https://www.paypal.me/nnduc/">
+			<img src="img/logo/pp.png" alt="Pay me" class="imgs-social">
+		</a></li>
+	</ul>
+</div>
+<div class="footer" href="css/bootstrap-responsive.css" rel="stylesheet" type="text/css">
+	<div class="container">
+		<p class="pull-left"><a href="https://nnduc.me/">nnduc.me</a></p>
+		<p class="pull-right"><a href="#myModal" role="button" data-toggle="modal"> <i class="icon-mail"></i>
+			CONTACT</a></p>
+	</div>
+</div>
+<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-header">
+		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+		<h3 id="myModalLabel"><i class="icon-mail"></i> Contact Me</h3>
+	</div>
+	<div class="modal-body">
+		<form action="#">
+			<input type="text" placeholder="Yopur Name">
+			<input type="text" placeholder="Your Email">
+			<input type="text" placeholder="Website (Optional)">
+			<textarea rows="3" style="width:80%"></textarea>
+			<br>
+			<button type="submit" class="btn btn-large"><i class="icon-paper-plane"></i> SUBMIT</button>
+		</form>
+	</div>
+</div>
+<script src="js/jquery-1.10.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+	$('#myModal').modal('hidden')
+</script>
 </body>
 </html>
