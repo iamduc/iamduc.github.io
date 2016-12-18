@@ -3,6 +3,7 @@
 a.brand img {
 	border-radius : 50%;
 	border        : 5px solid #fff;
+	padding :5px 0;
 }
 
 .profile, .skills, .work, .resume {
