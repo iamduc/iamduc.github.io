@@ -355,7 +355,7 @@ h1, h2, h3, h4, h5, h6, figure {
 #fh5co-blog,
 #fh5co-pricing,
 #fh5co-contact{
-	padding: 7em 0;
+	padding: 5em 0;
 	clear: both;
 	@media screen and (max-width: $screen-sm) {
 		padding: 3em 0;
@@ -458,15 +458,15 @@ h1, h2, h3, h4, h5, h6, figure {
 
 
 .fh5co-heading {
-	margin-bottom: 5em;
+	margin-bottom: 0em;
 	&.fh5co-heading-sm {
-		margin-bottom: 2em;
+		margin-bottom: 0em;
 	}
 	h2 {
 		font-size: 40px;
 		margin-bottom: 20px;
 		line-height: 1.5;
-		color: $brand-black;
+		color: lighten($brand-black,80%);
 	}
 	p {
 		font-size: 18px;
@@ -1284,14 +1284,14 @@ input[type="text"] {
     -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
     -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
     animation-name: my-blog-link-keyframes;
-    animation-duration: 2s;
+    animation-duration: 3s;
 	animation-iteration-count: infinite;
 	animation-direction: reverse;
 }
 
 @keyframes my-blog-link-keyframes {
-    0%   {color: #FF7300;}
-    25%  {color: #D37000;}
+    0%   {color: rgb(0, 124, 17);}
+    25%  {color: rgb(0, 211, 148);}
     50%  {color: #006EFF;}
     100% {color: #0039F5;}
 }
